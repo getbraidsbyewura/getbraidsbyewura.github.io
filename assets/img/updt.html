@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- ======= Meta & Title ======= -->
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Personal Portfolio</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <link rel="icon" type="image/png" href="/favicon.png" />
+
+  <!-- ======= Google Fonts ======= -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Carlito&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans&display=swap" rel="stylesheet">
+  <!-- flatpickr CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+
+
+
+  <!-- ======= Vendor CSS Files ======= -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <!-- Lightbox2 CSS & JS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
+
+  <!-- ======= Main CSS File ======= -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- ======= Custom Styles ======= -->
+  <style>
+    .typewriter {
+      font-size: 30px;
+      border-right: 1px solid #00FF00;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 0ch;
+      animation: typing 4s steps(44) 1s forwards,
+                 deleting 4s steps(44) 6s forwards;
+      animation-iteration-count: infinite;
+      color: #00FF00;
+      font-family: 'Pacifico', cursive;
+    }
+
+    @keyframes typing {
+      from {
+        width: 0ch;
+      }
+
+      to {
+        width: 44ch;
+      }
+    }
+
+    @keyframes deleting {
+      from {
+        width: 44ch;
+      }
+
+      to {
+        width: 0ch;
+      }
+    }
+
+    .braid-style img {
+      width: 300px;
+      height: auto;
+      border-radius: 10px;
+    }
+  </style>
+  
+  
+  <style>
+
+    /* HEADER SECTION */
+    #header {
+      height: 100vh;
+      background: url('assets/img/hf1.jpg') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      /*text-align: center;*/
+      transition: opacity 0.5s ease;
+    }
+
+    #header h1 {
+      font-size: 60px;
+      color: white;
+      font-family: 'Pacifico', cursive;
+      margin-bottom: 20px;
+    }
+
+    .typewriter {
+      font-size: 24px;
+      color: #00FF00;
+      font-family: 'Pacifico', cursive;
+      border-right: 2px solid #00FF00;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 0ch;
+      animation: typing 4s steps(44) 1s forwards,
+                 deleting 4s steps(44) 6s forwards;
+      animation-iteration-count: infinite;
+    }
+
+    @keyframes typing {
+      from { width: 0ch; }
+      to { width: 44ch; }
+    }
+
+    @keyframes deleting {
+      from { width: 44ch; }
+      to { width: 0ch; }
+    }
+
+    /* HIDE HEADER WHEN ANOTHER SECTION IS ACTIVE */
+    body.section-show-active #header {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    /* NAVIGATION MENU */
+    .nav-menu {
+      position: fixed;
+      top: 20px;
+      right: 30px;
+      z-index: 9999;
+    }
+
+    .nav-menu ul {
+      display: flex;
+      gap: 12px;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .nav-menu li {
+      padding: 6px 14px;
+      background-color: #000;
+      border-radius: 10px;
+      border: 1px solid #00FF00;
+      transition: all 0.3s ease;
+    }
+
+    .nav-menu li:hover {
+      background-color: #00FF00;
+      transform: scale(1.05);
+    }
+
+    .nav-menu a {
+      color: white;
+      font-size: 16px;
+      font-family: 'Shantell Sans', cursive;
+    }
+
+
+
+
+  </style>
+  
+</head>
+
+<body>
+
+  <!-- ======= Header Section ======= -->
+  <header id="header" class="header-tops" style="background: url('assets/img/hf3.jpeg') no-repeat center center fixed; background-size: cover;">
+    <div class="container">
+
+      <!-- ======= Title ======= -->
+      <h1 style="font-size: 98px; font-family: 'Pacifico', cursive; color: white; margin-bottom: 40px;">
+        <a href="index.html" style="text-decoration: none; color: inherit;">getBraids by Ewura</a>
+      </h1>
+
+      <!-- ======= Typewriter Welcome Message ======= -->
+      <div class="typewriter">
+        Every Braid Tells a Story. Let’s Start Yours.
+      </div>
+
+      <!-- ======= Navigation Menu ======= -->
+      <nav class="nav-menu d-none d-lg-block">
+        
+        <ul style="display: flex; gap: 20px; list-style: none; padding: 0; margin: 0;">
+        
+          <li class="nav-item" style="padding: 4px 16px; border-radius: 10px; background-color: #000;">
+            <a href="#header" style="text-decoration: none; font-size: 18px; color: white; font-family: 'Shantell Sans', cursive;">Home</a>
+
+          </li>
+          <li class="nav-item" style="padding: 4px 16px; border-radius: 10px; background-color: #000;">
+            <a href="#about" style="text-decoration: none; font-size: 18px; color: white; font-family: 'Shantell Sans', cursive;">Portfolio</a>
+
+          </li>
+          <li class="nav-item" style="padding: 4px 16px; border-radius: 10px; background-color: #000;">
+            <a href="#education" style="text-decoration: none; font-size: 18px; color: white; font-family: 'Shantell Sans', cursive;">BookME</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- ======= Social Media Links ======= -->
+      <div class="social-links">
+        <a href="https://www.facebook.com/share/1N6MjkoNtP/?mibextid=wwXIfr" target="_blank" class="instagram"><i class="bx bxl-instagram" style="font-size: 32px;"></i></a>
+        <a href="https://www.facebook.com/share/1N6MjkoNtP/?mibextid=wwXIfr" target="_blank" class="facebook"><i class="bx bxl-facebook" style="font-size: 32px;"></i></a>
+      <div style="display: flex; align-items: center; gap: 6px;">
+          <i class="bx bx-map" style="font-size: 30px;"></i>
+          <span style="font-size: 20px; font-family: 'Shantell Sans', cursive;">Lubbock, TX</span>
+        </div>
+      </div>
+    </div>
+    
+    
+  </header>
+
+
+<!-- ======= Custom Portfolio Section with Lightbox + Thumbnails ======= -->
+<section id="about" class="about" style="background-color: #f7f7f7; padding: 60px 0;">
+  
+  <div class="about-me container">
+    <div class="section-title text-center mb-5">
+      <h2 style="color: #222; font-weight: bold; font-family: 'Shantell Sans', cursive; font-size: 2rem;">Our Braiding Styles & Prices</h2>
+      <!--<p style="color: #666; font-family: 'Shantell Sans', cursive;">Explore our beautiful collection of signature braiding styles, crafted with love and care.</p>-->
+    </div>
+
+    
+        <!-- ======= Additional Styles List ======= -->
+<div class="row mt-5">
+  <div class="col-12">
+    <h3 style="font-family: 'Shantell Sans', cursive; font-weight: bold; color: #222; text-align: center; margin-bottom: 20px;">
+      More Styles & Pricing
+    </h3>
+    <ul style="list-style: none; padding: 0; max-width: 600px; margin: 0 auto; font-family: 'Shantell Sans', cursive; font-size: 1.2rem; color: #444;">
+      <li style="display: flex; justify-content: space-between; border-bottom: 1px solid #ddd; padding: 8px 0;">
+        <span>Box Braids</span>
+        <span>$85</span>
+      </li>
+      <li style="display: flex; justify-content: space-between; border-bottom: 1px solid #ddd; padding: 8px 0;">
+        <span>Knotless</span>
+        <span>$80</span>
+      </li>
+      <li style="display: flex; justify-content: space-between; border-bottom: 1px solid #ddd; padding: 8px 0;">
+        <span>Butterfly Locs</span>
+        <span>$120</span>
+      </li>
+      <li style="display: flex; justify-content: space-between; border-bottom: 1px solid #ddd; padding: 8px 0;">
+        <span>Sew-Ins</span>
+        <span>$80</span>
+      </li>
+      <li style="display: flex; justify-content: space-between; border-bottom: 1px solid #ddd; padding: 8px 0;">
+        <span>Wig Installation</span>
+        <span>$60</span>
+      </li>
+      <li style="display: flex; justify-content: space-between; border-bottom: 1px solid #ddd; padding: 8px 0;">
+        <span>Kinky Twist</span>
+        <span>$100</span>
+      </li>
+      <li style="display: flex; justify-content: space-between; border-bottom: 1px solid #ddd; padding: 8px 0;">
+        <span>Crochet</span>
+        <span>$100</span>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div style="height: 50px;"></div>
+
+
+
+    <!-- Gallery Grid -->
+    <div class="row gy-4">
+      <div class="col-lg-4 col-md-6">
+        <div class="portfolio-card">
+          <img src="assets/img/work1.jpeg" alt="Box Braids" class="gallery-img">
+          <h4 style="font-family: 'Shantell Sans', cursive; font-size: 1rem;"></h4>
+          <!--<h4 style="font-family: 'Shantell Sans', cursive; font-size: 1rem;">Box Braids</h4>-->
+          <!--<p>Classic and versatile for every occasion.</p>-->
+          <!--<p class="price-tag">$70</p>-->
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="portfolio-card">
+          <img src="assets/img/work2.jpeg" alt="Twist Braids" class="gallery-img">
+          <h4 style="font-family: 'Shantell Sans', cursive; font-size: 1rem;"></h4>
+          <!--<p>Effortless beauty and a gentle look.</p>-->
+          <!--<p class="price-tag">$70</p>-->
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="portfolio-card">
+          <img src="assets/img/work4.jpeg" alt="Cornrows" class="gallery-img">
+          <h4 style="font-family: 'Shantell Sans', cursive; font-size: 1rem;"></h4>
+          <!--<p>Clean lines, bold definition.</p>-->
+          <!--<p class="price-tag">$70</p>-->
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="portfolio-card">
+          <img src="assets/img/work3.jpeg" alt="Elegant Twists" class="gallery-img">
+          <h4 style="font-family: 'Shantell Sans', cursive; font-size: 1rem;"></h4>
+          <!--<p>A lightweight twist for a soft, chic vibe.</p>-->
+          <!--<p class="price-tag">$70</p>-->
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="portfolio-card">
+          <img src="assets/img/crochet.jpeg" alt="Long Box Braids" class="gallery-img">
+          <h4 style="font-family: 'Shantell Sans', cursive; font-size: 1rem;"></h4>
+          <!--<p>Perfect for dramatic and elegant looks.</p>-->
+          <!--<p class="price-tag">$70</p>-->
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="portfolio-card">
+          <img src="assets/img/work5.jpg" alt="Stylish Cornrows" class="gallery-img">
+          <h4 style="font-family: 'Shantell Sans', cursive; font-size: 1rem;"></h4>
+          <!--<p style="font-family: 'Carlito', sans-serif; font-size: 20px;">Bold pattern and clean design lines.</p>-->
+          <!--<p class="price-tag">$70</p>-->
+        </div>
+      </div>
+      
+      <div class="col-lg-4 col-md-6">
+    <div class="portfolio-card">
+      <img src="assets/img/kinky.jpeg" alt="Knotless Braids" class="gallery-img">
+      <h4 style="font-family: 'Shantell Sans', cursive; font-size: 1rem;"></h4>
+      <!--<p class="price-tag">$70</p>-->
+    </div>
+  </div>
+
+  <div class="col-lg-4 col-md-6">
+    <div class="portfolio-card">
+      <img src="assets/img/work6.jpg" alt="Faux Locs" class="gallery-img">
+      <h4 style="font-family: 'Shantell Sans', cursive; font-size: 1rem;"></h4>
+      <!--<p class="price-tag">$70</p>-->
+    </div>
+  </div>
+
+  <div class="col-lg-4 col-md-6">
+    <div class="portfolio-card">
+      <img src="assets/img/work7.jpeg" alt="Butterfly Locs" class="gallery-img">
+      <h4 style="font-family: 'Shantell Sans', cursive; font-size: 1rem;"></h4>
+      <!--<p class="price-tag">$70</p>-->
+    </div>
+  </div>
+
+
+    </div>
+  
+  
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+      <button class="close" onclick="closeLightbox()">&times;</button>
+      <button class="nav-btn left" onclick="prevImage()">&#10094;</button>
+      <img id="lightbox-img" src="" alt="Braiding Style">
+      <button class="nav-btn right" onclick="nextImage()">&#10095;</button>
+      <div class="lightbox-thumbnails" id="lightbox-thumbnails"></div>
+    </div>
+
+
+<div style="height: 50px;"></div>
+
+
+<!-- Testimonial Section -->
+<div style="overflow: hidden; background: #f7f7f7; padding: 40px 0;">
+  <h3 style="font-family: 'Shantell Sans', cursive; color: #000; font-size: 2.2rem; text-align: center;">
+    What Our Clients Say
+  </h3>
+  <p style="font-family: 'Shantell Sans', cursive; color: #000; text-align: center; margin-bottom: 30px;">
+    Real feedback from our beautiful clients
+  </p>
+
+  <div class="testimonial-slider">
+    <div class="testimonial-track">
+      <!-- Testimonial Card -->
+      <div class="testimonial-card" style="font-family: 'Shantell Sans', cursive;">
+        “Absolutely loved my braids! The attention to detail was amazing.”
+        <p>– Ama N.</p>
+      </div>
+      <div class="testimonial-card" style="font-family: 'Shantell Sans', cursive;">
+        “Super friendly and professional. Definitely coming back!”
+        <p>– Sihle M.</p>
+      </div>
+      <div class="testimonial-card" style="font-family: 'Shantell Sans', cursive;">
+        “I’ve never gotten so many compliments before. Thank you Ewura!”
+        <p>– Zola T.</p>
+      </div>
+      <!-- Duplicate for seamless loop -->
+      <div class="testimonial-card" style="font-family: 'Shantell Sans', cursive;">
+        “Absolutely loved my braids! The attention to detail was amazing.”
+        <p>– Ama N.</p>
+      </div>
+      <div class="testimonial-card" style="font-family: 'Shantell Sans', cursive;">
+        “Super friendly and professional. Definitely coming back!”
+        <p>– Sihle M.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+  
+  
+  
+</section>
+
+
+
+
+
+<!-- ======= Booking Section ======= -->
+<section id="education" class="services" style="padding: 30px 0;">
+  <div class="container">
+    <div class="section-title text-center">
+      <h2 style="color: white; font-weight: bold; font-family: 'Shantell Sans', cursive;">Book Your Appointment</h2>
+      <!--<p class="text-muted">Let us know what style you want and when you're coming. We'll take care of the rest!</p>-->
+    </div>
+    
+
+    
+    <!-- ======= Booking Form ======= -->
+    
+    <div style="text-align: center; margin-bottom: 30px;">
+      <h2 style="font-family: 'Pacifico', cursive; color: #7FFF00;">✨ Let’s Book Your Look</h2>
+      <p style="font-family: 'Shantell Sans', cursive; color: #ccc;">
+        Fill out the form and let us transform your hair with love.
+      </p>
+    </div>
+
+    
+    <form action="https://formspree.io/f/xeqybeql" method="POST" id="bookingForm"
+      class="card p-4 shadow rounded-4 mx-auto"
+      style="max-width: 600px; border: 1px solid #7FFF00;">
+      
+      
+      <input type="hidden" name="_subject" value="New Appointment Request">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html">
+
+      <div class="mb-3">
+        <label for="name" class="form-label" style="font-family: 'Shantell Sans', cursive;">Name</label>
+        <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required style="font-family: 'Shantell Sans', cursive;">
+      </div>
+
+      <div class="mb-3">
+        <label for="phone" class="form-label" style="font-family: 'Shantell Sans', cursive;">Phone Number</label>
+        <input type="tel" name="phone" id="phone" class="form-control" placeholder="123-456-7890"
+          pattern="^\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}$" title="Enter a valid US phone number" required style="font-family: 'Shantell Sans', cursive;">
+      </div>
+
+      <div class="mb-3">
+        <label for="service" class="form-label" style="font-family: 'Shantell Sans', cursive;">Select Service</label>
+        <select name="service" id="service" class="form-select" style="font-family: 'Shantell Sans', cursive;" required>
+          <option selected disabled>Choose a service</option>
+          <option value="Braids" >Braids</option>
+          <option value="Braids">Box Braids</option>
+          <option value="Cornrows">Cornrows</option>
+          <option value="Cornrows">Wig installation</option>
+          <option value="Twists">Twists</option>
+          <option value="Custom">Other (add to notes)</option>
+        </select>
+      </div>
+
+      <div class="mb-3">
+        <label for="date" class="form-label" style="font-family: 'Shantell Sans', cursive;">Preferred Date</label>
+        <input type="text" name="date" id="date" class="form-control" style="font-family: 'Shantell Sans', cursive;" placeholder="Select a date" required>
+                
+      </div>
+      
+      
+
+      <div class="mb-3">
+        <label for="time" class="form-label" style="font-family: 'Shantell Sans', cursive;">Preferred Time</label>
+        <select name="time" id="time" class="form-select" style="font-family: 'Shantell Sans', cursive;" required>
+          <option selected disabled>Select a time</option>
+          <option>08:00 AM</option>
+          <option>08:30 AM</option>
+          <option>09:00 AM</option>
+          <option>09:30 AM</option>
+          <option>10:00 AM</option>
+          <option>10:30 AM</option>
+          <option>11:00 AM</option>
+          <option>11:30 AM</option>
+          <option>12:00 PM</option>
+          <option>12:30 PM</option>
+          <option>01:00 PM</option>
+          <option>01:30 PM</option>
+          <option>02:00 PM</option>
+          <option>02:30 PM</option>
+          <option>03:00 PM</option>
+        </select>
+      </div>
+      
+      
+      <div class="mb-3">
+        <label for="notes" class="form-label" style="font-family: 'Shantell Sans', cursive;">Additional Notes</label>
+        <textarea name="notes" id="notes" rows="3" class="form-control" style="font-family: 'Shantell Sans', cursive;" placeholder="Optional..."></textarea>
+      </div>
+
+      <button type="submit" class="btn w-100 fw-bold"
+        style="background-color: #000; border: 2px solid #7FFF00; color: #7FFF00; border-radius: 6px; font-family: 'Shantell Sans', cursive;">
+        Submit Booking
+      </button>
+    </form>
+  </div>
+  
+      
+    <p style="text-align: center; font-family: 'Shantell Sans', cursive; color: #aaa; margin-top: 20px;">
+      Still unsure? DM us on <a href="https://instagram.com" target="_blank" style="color: #7FFF00;">Instagram</a> or <a href="https://facebook.com" target="_blank" style="color: #7FFF00;">Facebook</a>.
+    </p>
+    
+    <!-- flatpickr JS -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script>
+      flatpickr("#time", {
+        enableTime: true,
+        noCalendar: true,
+        dateFormat: "h:i K",
+        time_24hr: false
+      });
+      
+      flatpickr("#date", {
+      altInput: true,
+      altFormat: "F j, Y",
+      dateFormat: "Y-m-d",
+      minDate: "today",
+      /*defaultDate: "today",*/
+      showMonths: 2,
+      showOtherMonths: false
+    });
+    
+    </script>
+    
+    <style>
+      /* Apply to the flatpickr input */
+      #date,
+      .flatpickr-input {
+        font-family: 'Shantell Sans', cursive !important;
+      }
+    
+      /* Apply to the calendar dropdown */
+      .flatpickr-calendar,
+      .flatpickr-calendar * {
+        font-family: 'Shantell Sans', cursive !important;
+      }
+    
+      .flatpickr-day.prevMonthDay, .flatpickr-day.nextMonthDay {
+        opacity: 1 !important;
+        color: #222 !important;
+        font-weight: 400;
+      }
+    </style>
+
+
+</section>
+
+
+
+  <!-- ======= Vendor JS Files ======= -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="assets/vendor/counterup/counterup.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+
+  <!-- ======= Main Template JS ======= -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>
